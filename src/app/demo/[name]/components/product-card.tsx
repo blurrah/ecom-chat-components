@@ -23,10 +23,6 @@ const mockProduct = {
 	product_id: "prod_123"
 };
 
-const mockSendMessage = (message: { text: string }) => {
-	console.log("Message sent:", message.text);
-};
-
 export const productCard = {
 	name: "product-card",
 	components: {
@@ -51,7 +47,6 @@ export const productCard = {
 						<Button 
 							size="sm" 
 							className="w-full"
-							onClick={() => mockSendMessage({ text: `Add "${mockProduct.title}" to my cart (variant: default)` })}
 						>
 							Add to Cart
 						</Button>
@@ -59,7 +54,6 @@ export const productCard = {
 							size="sm" 
 							className="w-full" 
 							variant="outline"
-							onClick={() => mockSendMessage({ text: `Get the product details for ${mockProduct.product_id}` })}
 						>
 							Get product details
 						</Button>
