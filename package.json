@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "npm run registry:build && next dev --turbopack",
-    "build": "npm run registry:build && next build",
+    "dev": "pnpm registry:build && next dev --turbopack",
+    "build": "pnpm registry:build && next build",
     "start": "next start",
     "lint": "biome check",
     "lint:fix": "biome check --write",
-    "registry:build": "npx shadcn@latest build"
+    "registry:build": "pnpm dlx shadcn@latest build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
@@ -78,7 +78,7 @@
     "tw-animate-css": "^1.3.5",
     "typescript": "5.4.5"
   },
-  "packageManager": "pnpm@9.15.2",
+  "packageManager": "pnpm@10.14.0",
   "engines": {
     "node": ">=22"
   },
