@@ -308,11 +308,34 @@
       "title": "Product Card",
       "description": "Product card displaying a single product",
       "registryDependencies": [
+        "button",
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
         {
-          "path": "src/components/product-card.tsx",
+          "path": "src/components/ui/product-card.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "product-details",
+      "type": "registry:component",
+      "title": "Product Details",
+      "description": "Detailed product view with images, options, and actions",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/product-details.tsx",
           "type": "registry:component"
         },
         {
