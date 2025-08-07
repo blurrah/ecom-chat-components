@@ -346,6 +346,31 @@
       ]
     },
     {
+      "name": "cart",
+      "type": "registry:component",
+      "title": "Cart",
+      "description": "Shopping cart component displaying items and checkout",
+      "registryDependencies": [
+        "badge",
+        "https://registry-starter.vercel.app/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/cart.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/components/cart.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/v0/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
       "name": "accordion",
       "type": "registry:ui",
       "title": "Accordion",

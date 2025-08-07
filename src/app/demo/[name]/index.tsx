@@ -43,6 +43,7 @@ import { tabs } from "@/app/demo/[name]/ui/tabs";
 import { toggleGroup } from "@/app/demo/[name]/ui/toggle-group";
 import { tooltip } from "@/app/demo/[name]/ui/tooltip";
 import { productDetails } from "./components/product-details";
+import { cart } from "./components/cart";
 
 interface Demo {
   name: string; // this must match the `registry.json` name
@@ -67,6 +68,7 @@ export const demos: { [name: string]: Demo } = {
   "product-grid": productGrid,
   "product-card": productCard,
   "product-details": productDetails,
+  "cart": cart,
   // ui
   accordion,
   alert,
