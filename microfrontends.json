@@ -1,0 +1,10 @@
+{
+    "$schema": "https://openapi.vercel.sh/microfrontends.json",
+    "applications": {
+        "registry-starter": {
+            "development": {
+                "fallback": "ecom-chat-components.vercel.app"
+            }
+        }
+    }
+}

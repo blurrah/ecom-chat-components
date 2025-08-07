@@ -1,4 +1,6 @@
 import type { NextConfig } from "next";
+import { withRemoteComponents } from 'remote-components/next/config';
+import { withMicrofrontends } from '@vercel/microfrontends/next/config';
 
 const nextConfig: NextConfig = {
   async headers() {
@@ -16,4 +18,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withRemoteComponents(withMicrofrontends(nextConfig));
