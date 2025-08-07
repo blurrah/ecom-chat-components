@@ -97,7 +97,7 @@ function ProductDetailsMainImage({ className, ...props }: React.ComponentProps<"
 	return (
 		<div
 			data-slot="product-details-main-image"
-			className={cn("aspect-square w-full rounded-lg overflow-hidden bg-gray-100", className)}
+			className={cn("aspect-square w-full rounded-lg overflow-hidden bg-muted", className)}
 			{...props}
 		/>
 	);
@@ -141,7 +141,7 @@ function ProductDetailsThumbnail({ className, active, ...props }: React.Componen
 				"flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-md overflow-hidden border-2 transition-all",
 				active
 					? "border-primary shadow-md"
-					: "border-gray-200 hover:border-gray-400",
+					: "border-border hover:border-muted-foreground",
 				className
 			)}
 			{...props}

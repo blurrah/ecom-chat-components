@@ -25,7 +25,7 @@ function CartUpdatedIcon({ className, ...props }: React.ComponentProps<"div">) {
 	return (
 		<div
 			data-slot="cart-updated-icon"
-			className={cn("size-4 text-green-600", className)}
+			className={cn("size-4", className)}
 			{...props}
 		/>
 	);

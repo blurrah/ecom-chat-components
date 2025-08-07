@@ -52,11 +52,11 @@ function getActionIcon(action: string) {
 function getActionColor(action: string) {
 	switch (action) {
 		case "added":
-			return "text-green-600";
+			return "text-secondary-foreground";
 		case "removed":
-			return "text-red-600";
+			return "text-destructive";
 		default:
-			return "text-blue-600";
+			return "text-muted-foreground";
 	}
 }
 
@@ -87,7 +87,7 @@ export function CartUpdatedComponent() {
 		<CartUpdated className="w-[400px]">
 			<CartUpdatedHeader>
 				<CartUpdatedIcon>
-					<CheckCircleIcon className="size-4 text-green-600" />
+					<CheckCircleIcon className="size-4 text-secondary-foreground" />
 				</CartUpdatedIcon>
 				<CartUpdatedTitle>Cart Updated Successfully</CartUpdatedTitle>
 				<Badge variant="secondary">
