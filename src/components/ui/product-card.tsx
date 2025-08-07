@@ -45,15 +45,23 @@ function ProductCardTitle({ className, ...props }: React.ComponentProps<"h5">) {
 	);
 }
 
-function ProductCardPrice({ className, ...props }: React.ComponentProps<"span">) {
+function ProductCardPrice({ className, ...props }: React.ComponentProps<"div">) {
 	return (
-		<div className="flex items-center justify-between">
-			<span
-				data-slot="product-card-price"
-				className={cn("font-semibold text-base", className)}
-				{...props}
-			/>
-		</div>
+		<div
+			data-slot="product-card-price"
+			className={cn("flex items-center justify-between", className)}
+			{...props}
+		/>
+	);
+}
+
+function ProductCardPriceText({ className, ...props }: React.ComponentProps<"span">) {
+	return (
+		<span
+			data-slot="product-card-price-text"
+			className={cn("font-semibold text-base", className)}
+			{...props}
+		/>
 	);
 }
 
